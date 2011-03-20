@@ -1,4 +1,6 @@
-#!/usr/bin/env ruby
+#! /usr/bin/env ruby
 $LOAD_PATH.unshift File.expand_path(File.join(File.dirname(__FILE__), '/../lib'))
 require 'widget'
-Environment=:production
+
+# Now run command the user specified on the command line
+Commandable.execute(ARGV)
