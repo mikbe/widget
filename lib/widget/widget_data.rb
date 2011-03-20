@@ -32,7 +32,10 @@ module Widget
     end
 
     def update(name)
-      !@widgets.update(name, :modified_at=>now).empty?
+      puts name
+      puts @widgets.update(name, :modified_at=>now)
+      puts @widgets.update(name, :modified_at=>now).empty?
+      !(@widgets.update(name, :modified_at=>now).empty?)
     end
     
     def delete(name)
@@ -64,7 +67,7 @@ module Widget
     end
 
     def now
-      Time.now.xmlschema(2)
+      Time.now.xmlschema(4)
     end
 
   end

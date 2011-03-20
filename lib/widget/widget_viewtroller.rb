@@ -66,7 +66,7 @@ module Widget
   
     command "spend lots of money to update a widget", :xor
     def upgrade(name)
-      
+      puts name
       updated = @data.update(name)
       puts updated
       if @data.update(name) 

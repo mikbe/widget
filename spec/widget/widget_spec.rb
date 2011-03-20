@@ -66,17 +66,18 @@ describe Widget::Data do
   end
   
   context "when upgrading a widget" do
+    before(:each) do
+      3.times { |i| @data.create("Widgee #{i}") }
+    end
 
     context "and the widget exists" do
-      before(:each) do
-        3.times { |i| @data.create("Widgee #{i}") }
-      end
       it {lambda{@data.update("Widgee 1")}.should_not raise_error}
       it {lambda{@data.update("Widgee 1")}.should change{@data.read("Widgee 1")[0][:modified_at]}}
       it {@data.update("Widgee 1").should be_true}
     end
     
     context "but the widget doesn't exist" do
+      
       it {lambda{@data.update("Widgee 99")}.should_not raise_error}
       it {@data.update("Widgee 99").should be_false}
     end
