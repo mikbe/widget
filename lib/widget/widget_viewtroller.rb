@@ -23,7 +23,7 @@ module Widget
     end
     alias :add :new
 
-    command "show a widget's details, if no name is given shows all widgets", :default
+    command "show a widget's details, if no name is given shows all widgets"
     def show(name=nil)
       if name 
         widgets = @data.read(name)
@@ -45,7 +45,7 @@ module Widget
       "All widgets destroyed. May they rest in peace."
     end
 
-    command "return a list of existing widget names"
+    command "return a list of existing widget names", :default
     def list
       puts "Widgets:"
       if @data.length > 0
@@ -66,7 +66,10 @@ module Widget
   
     command "spend lots of money to update a widget", :xor
     def upgrade(name)
-      if @data.update(name)
+      
+      updated = @data.update(name)
+      puts updated
+      if @data.update(name) 
         "You just gave #{name} a fresh coat of paint!"
       else
         "There is no #{name} in storage."

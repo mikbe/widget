@@ -8,3 +8,5 @@ group :development do
   gem "aruba", "0.3.3"
   gem "cucumber", "0.10.0"
 end
+
+.gemspec

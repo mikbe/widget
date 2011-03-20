@@ -21,8 +21,8 @@ module Widget
     
     def create(name)
       return false unless @widgets.where(name).empty?
-      now = Time.now.xmlschema(2)
-      @widgets.add(:name=>name, :created_at=>now, :modified_at=>now)
+      save_now = now
+      @widgets.add(:name=>name, :created_at=>save_now, :modified_at=>save_now)
       save_widget
       true
     end
@@ -32,7 +32,7 @@ module Widget
     end
 
     def update(name)
-      @widgets.update(name, :modified_at=>"#{Time.now}") != []
+      !@widgets.update(name, :modified_at=>now).empty?
     end
     
     def delete(name)
@@ -61,6 +61,10 @@ module Widget
 
     def save_widget(widget=@widgets)
       File.open(HASHMODEL_FILE, "w"){|file| file.write(Marshal.dump(widget))}
+    end
+
+    def now
+      Time.now.xmlschema(2)
     end
 
   end
