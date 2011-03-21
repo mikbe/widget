@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 gem "commandable"
-gem "hashmodel", "0.4.0.beta1"
+gem "hashmodel", "0.4.0.beta2"
 
 group :development do
   gem "rspec", "2.5.0"
@@ -9,4 +9,4 @@ group :development do
   gem "cucumber", "0.10.0"
 end
 
-.gemspec
+gemspec
