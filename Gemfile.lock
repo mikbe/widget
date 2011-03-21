@@ -1,3 +1,10 @@
+PATH
+  remote: .
+  specs:
+    widget (0.0.1)
+      commandable (= 0.2.0.beta2)
+      hashmodel (= 0.4.0.beta2)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -8,7 +15,7 @@ GEM
     builder (3.0.0)
     childprocess (0.1.7)
       ffi (~> 0.6.3)
-    commandable (0.2.0.beta02)
+    commandable (0.2.0.beta2)
       term-ansicolor-hi (~> 1.0.7)
     cucumber (0.10.0)
       builder (>= 2.1.2)
@@ -21,9 +28,9 @@ GEM
       rake (>= 0.8.7)
     file-tail (1.0.5)
       spruz (>= 0.1.0)
-    gherkin (2.3.4)
-      json (~> 1.4.6)
-    hashmodel (0.4.0.beta1)
+    gherkin (2.3.5)
+      json (>= 1.4.6)
+    hashmodel (0.4.0.beta2)
       file-tail
       sourcify
     json (1.4.6)
@@ -55,7 +62,8 @@ PLATFORMS
 
 DEPENDENCIES
   aruba (= 0.3.3)
-  commandable
+  commandable (= 0.2.0.beta2)
   cucumber (= 0.10.0)
-  hashmodel (= 0.4.0.beta1)
+  hashmodel (= 0.4.0.beta2)
   rspec (= 2.5.0)
+  widget!

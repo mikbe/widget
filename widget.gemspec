@@ -9,11 +9,11 @@ Gem::Specification.new do |s|
   s.authors     = ["Mike Bethany"]
   s.email       = ["mikbe.tk@gmail.com"]
   s.homepage    = "http://mikbe.tk"
-  s.summary     = %q{A demonstration app showing how to use Commandable}
-  s.description = %q{A demonstration app showing how to use Commandable that also serves as a test platform for HashModel}
+  s.summary     = %q{A demonstration app showing how to use Commandable and HashModle}
+  s.description = %q{A demonstration app showing how to use Commandable and HashModel. It also serves as a test platform for fleshing out problems and designing new features for the aforementioned libraries.}
   
-  s.add_dependency("hashmodel", "~>0.4")
-  s.add_dependency("commandable", "~>0.2")
+  s.add_dependency("hashmodel", "0.4.0.beta2")
+  s.add_dependency("commandable", "0.2.0.beta2")
   
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")

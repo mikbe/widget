@@ -21,6 +21,7 @@ module Widget
         "#{name} already exists!"
       end
     end
+    command "add a new widget"
     alias :add :new
 
     command "show a widget's details, if no name is given shows all widgets"
@@ -63,12 +64,11 @@ module Widget
         "There is no #{name} in storage."
       end
     end
-  
+    command "delete an existing widget", :xor
+    alias :delete :destroy 
+    
     command "spend lots of money to update a widget", :xor
     def upgrade(name)
-      puts name
-      updated = @data.update(name)
-      puts updated
       if @data.update(name) 
         "You just gave #{name} a fresh coat of paint!"
       else
