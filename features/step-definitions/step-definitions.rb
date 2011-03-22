@@ -3,6 +3,7 @@ Before do
   File.delete(file_name) if File.exists?(file_name)
   Widget::Data.reset_instance
   @data = Widget::Data.instance
+  @aruba_timeout_seconds = 30
 end
 
 Given /^I have a widget named "([^"]*)"$/ do |name|
