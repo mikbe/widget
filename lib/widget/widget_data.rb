@@ -65,7 +65,7 @@ module Widget
     HASHMODEL_FILE = File.expand_path((File.dirname(__FILE__) + '/../../db/hashmodel.dat'))
     
     def load_widgets
-       Marshal.load(File.open(HASHMODEL_FILE, "r"))
+      Marshal.load(File.open(HASHMODEL_FILE, "r"))
     end
 
     def save_widgets(widget=@widgets)
