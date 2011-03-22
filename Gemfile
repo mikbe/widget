@@ -1,12 +1,2 @@
 source "http://rubygems.org"
-
-gem "commandable", "0.2.0.beta2"
-gem "hashmodel", "0.4.0.beta2"
-
-group :development do
-  gem "rspec", "2.5.0"
-  gem "aruba", "0.3.3"
-  gem "cucumber", "0.10.0"
-end
-
 gemspec
