@@ -5,10 +5,10 @@ Feature: List Widgets
 
   Scenario: List widget names
     Given I have 5 widgets named "Widgee #{n}"
-     When I run "widget list"
+     When I run `widget list`
      Then the output should contain 5 lines matching "Widgee #{n}"
 
   Scenario: Listing when there are no widgets
     Given There are no widgets
-     When I run "widget list"
+     When I run `widget list`
      Then the output should contain "<none>"

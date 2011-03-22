@@ -1,24 +1,24 @@
 PATH
   remote: .
   specs:
-    widget (0.0.2)
+    widget (0.0.3)
       aruba (~> 0.3)
-      commandable (~> 0.2.0.beta)
+      commandable (~> 0.2.0.rc)
       cucumber (~> 0.10)
-      hashmodel (~> 0.4.0.beta)
+      hashmodel (~> 0.4.0.rc)
       rspec (~> 2.5)
 
 GEM
   remote: http://rubygems.org/
   specs:
-    aruba (0.3.4)
+    aruba (0.3.5)
       childprocess (>= 0.1.7)
       cucumber (>= 0.10.0)
       rspec (>= 2.5.0)
     builder (3.0.0)
-    childprocess (0.1.7)
-      ffi (~> 0.6.3)
-    commandable (0.2.0.beta3)
+    childprocess (0.1.8)
+      ffi (~> 1.0.6)
+    commandable (0.2.0.rc1)
       term-ansicolor-hi (~> 1.0.7)
     cucumber (0.10.2)
       builder (>= 2.1.2)
@@ -27,15 +27,15 @@ GEM
       json (>= 1.4.6)
       term-ansicolor (>= 1.0.5)
     diff-lcs (1.1.2)
-    ffi (0.6.3)
+    ffi (1.0.7)
       rake (>= 0.8.7)
     file-tail (1.0.5)
       spruz (>= 0.1.0)
     gherkin (2.3.5)
       json (>= 1.4.6)
-    hashmodel (0.4.0.beta3)
-      file-tail
-      sourcify
+    hashmodel (0.4.0.rc1)
+      file-tail (~> 1.0)
+      sourcify (~> 0.4)
     json (1.5.1)
     rake (0.8.7)
     rspec (2.5.0)
