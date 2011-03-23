@@ -14,20 +14,28 @@ It makes widgets of course.
 
 You can install it as a Gem by running:
 
-    rake install
+    $ rake install
 
 You can then run it by just typing:
 
-    widget
+    $ widget
 
-Or run it as is by typing
+Or run it as is by typing:
 
-    bin/widget <command> [parameter]
+    $ bin/widget <command> [parameter]
 
-To see what it can do type
+To see what it can do type:
 
-    widget help
+    $ widget help
 
+## Change History ##
+
+2011.03.23 - 0.0.4
+Updated to use production versions of:
+  
+[Commandable][] 0.2.0   
+
+[HashModel][] 0.4.0  
 
 [HashModel]: https://github.com/mikbe/hashmodel
 [Commandable]: https://github.com/mikbe/commandable

@@ -12,8 +12,8 @@ Gem::Specification.new do |s|
   s.summary     = %q{A demonstration app showing how to use Commandable and HashModel.}
   s.description = %q{A demonstration app showing how to use Commandable and HashModel. It also serves as a test platform for fleshing out problems and designing new features for the aforementioned libraries.}
   
-  s.add_dependency("hashmodel", "~>0.4.0.rc")
-  s.add_dependency("commandable", "~>0.2.0.rc")
+  s.add_dependency("hashmodel", "~>0.4")
+  s.add_dependency("commandable", "~>0.2")
 
   s.add_dependency("rspec", "~>2.5")
   s.add_dependency("aruba", "~>0.3")
